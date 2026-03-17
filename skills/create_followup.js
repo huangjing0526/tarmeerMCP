@@ -58,7 +58,7 @@ module.exports = {
     const client = createCRMClient({ tenantId, userId });
 
     try {
-      const response = await client.post('/api/followups', {
+      const response = await client.post('/api/mcp/followups', {
         entity_type,
         entity_id,
         method,

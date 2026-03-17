@@ -40,7 +40,7 @@ module.exports = {
     const client = createCRMClient({ tenantId, userId });
 
     try {
-      const response = await client.get('/api/search', {
+      const response = await client.get('/api/mcp/search', {
         params: { q: query, type, pageSize }
       });
 

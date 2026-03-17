@@ -39,7 +39,7 @@ module.exports = {
 
     try {
       const response = await client.get(
-        `/api/followups/entity/${entity_type}/${entity_id}`,
+        `/api/mcp/followups/entity/${entity_type}/${entity_id}`,
         { params: { pageSize } }
       );
 

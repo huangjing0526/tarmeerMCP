@@ -26,7 +26,7 @@ module.exports = {
     const client = createCRMClient({ tenantId, userId });
 
     try {
-      const response = await client.get(`/api/customers/${customer_id}`);
+      const response = await client.get(`/api/mcp/customers/${customer_id}`);
       const customer = response.data.data;
 
       return {
